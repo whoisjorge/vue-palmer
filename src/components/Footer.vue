@@ -83,13 +83,12 @@ footer
    * 
    * */ 
 a 
-    color: rgba(0,0,0,0)
-    text-shadow: 1px 0px 4px rgba(16,215,174,0.7)
+    color: rgba(0,0,0,.05)
+    text-shadow: none
     transition: text-shadow 0.666s ease-in-out, color 1.666s
   
     &:hover
-        color: rgba(0,0,0,.05)
-        text-shadow: none
-        
-        
+        color: rgba(0,0,0,0)
+        text-shadow: 1px 0px 4px rgba(16,215,174,0.7)
+  
 </style>

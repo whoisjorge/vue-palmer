@@ -9,7 +9,10 @@ function resolve (dir) {
 
 module.exports = {
   entry: {
-    app: './src/index.js'
+    app: [
+      'babel-polyfill',
+      './src/index.js'
+    ]
   },
   output: {
     path: config.build.assetsRoot,
@@ -55,6 +58,14 @@ module.exports = {
         options: {
           limit: 10000,
           name: utils.assetsPath('img/[name].[hash:7].[ext]')
+        }
+      },
+      {
+        test: /\.(mp4|webm|ogg|mp3|wav|flac|aac)(\?.*)?$/,
+        loader: 'url-loader',
+        options: {
+          limit: 10000,
+          name: utils.assetsPath('media/[name].[hash:7].[ext]')
         }
       },
       {

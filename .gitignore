@@ -1,16 +1,17 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
-# dependencies
 node_modules/
 package-lock.json
 yarn.lock
-
-# production
-dist/
-
-
-# etc
+test/unit/coverage
+test/e2e/reports
+*.log
+selenium-debug.log
 .DS_Store
 .idea
-*.log
+
+# production build
+dist/
+
+# nope
 notes.md

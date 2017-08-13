@@ -1,15 +1,14 @@
 <template>
   <section>
 
-        <!-- <h1 class="title"> vue-palmer</h1> -->
-        <img src="../assets/images/vue-palmer.png" alt="vue-palmer" width="290px">
-
         <ul>
           <li> <router-link to="/" exact> Home </router-link> </li>
           <li> <router-link to="/about" exact> About </router-link> </li>
           <li> <router-link to="/login" exact> Login </router-link> </li>
-          <li> <a href="http://vuejs-templates.github.io/webpack/" target="_blank">Docs</a> </li>
+          <li> <a href="https://github.com/whoisjorge/vue-palmer/tree/master/docs" target="_blank">Docs</a> </li>
         </ul>
+        <br>
+        <img src="../assets/images/vue-palmer.png" alt="vue-palmer" width="290px">
 
   </section>
 </template>
