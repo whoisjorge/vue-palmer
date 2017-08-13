@@ -1,0 +1,60 @@
+@charset 'UTF-8';
+/* *
+   *
+   *    EXTERNAL LIBRARIES
+   *
+   * */
+// Animate.css (https://github.com/daneden/animate.css)
+// MIT License | Copyright (c) 2016 Daniel Eden
+@import '~animate.css';
+.animated {
+    animation-duration: .600s;
+    animation-delay: 0s;
+}
+// Font Awesome by @davegandy - http://fontawesome.io - @fontawesome
+// License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+$fa-font-path: '~font-awesome/fonts/';
+@import '~font-awesome/scss/font-awesome';
+
+
+
+/* *
+   *
+   *    APPLICATION MAIN STYLES
+   *
+   * */
+@import './_fonts';
+@import './_variables';
+// Bulma.io (https://github.com/jgthms/bulma)
+// MIT License | Copyright (c) 2017 Jeremy Thomas
+@import '~bulma';
+
+
+// Tweak lol
+// * { -webkit-tap-highlight-color: transparent; }
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+::selection {
+  background-color: #79FFE1;
+  color: #000;
+}
+
+html {
+  height: 100%; 
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  min-height: 100%;
+  padding-bottom: 6rem;
+}
+
+a {
+  transition: color 0.23s;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}

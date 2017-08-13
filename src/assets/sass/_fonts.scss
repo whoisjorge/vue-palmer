@@ -1,0 +1,21 @@
+/* *
+   *    LOAD CUSTOM FONTS
+   *
+   *    - This is the method with the deepest support possible right now. 
+   *    - The @font-face rule should be added to the stylesheet BEFORE any styles.
+   *      (https://css-tricks.com/snippets/css/using-font-face/)
+   *
+   * */
+$font_path: './assets/fonts/';
+
+
+@font-face {
+  font-family: 'BrandonGrotesque';
+  src: url($font_path + 'brandon-grotesque.eot'); /* IE9 Compat Modes */
+  src: url($font_path + 'brandon-grotesque.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url($font_path + 'brandon-grotesque.woff') format('woff'), /* Pretty Modern Browsers */
+       url($font_path + 'brandon-grotesque.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url($font_path + 'brandon-grotesque.svg#BrandonGrotesque') format('svg'); /* Legacy iOS */
+  font-weight: 800;
+  font-style: italic;
+}
