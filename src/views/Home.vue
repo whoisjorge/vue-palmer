@@ -16,6 +16,7 @@
 
 <script>
 export default {
+  name: 'HOME_VIEW',
   mounted () {
     // enterAnim = 'Hola'
   }

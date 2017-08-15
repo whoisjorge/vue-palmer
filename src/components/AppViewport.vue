@@ -17,6 +17,7 @@
 
 <script>
 export default {
+  name: 'VIEWPORT',
   data () {
     return {
       modeAnim: 'out-in',

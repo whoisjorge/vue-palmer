@@ -6,7 +6,7 @@
 <br>
 </div>
 
-<p align="center" color="#ccc">Develop web applications with no build configuration until you need.</p>
+<p align="center" color="#ccc">Develop progressive web applications with no build configuration... until you need!</p>
 
 <div align="center">
 
@@ -19,8 +19,6 @@
 <div align="center">
   <a href="https://travis-ci.org/whoisjorge/vue-palmer"> <img src ="https://travis-ci.org/whoisjorge/vue-palmer.svg?branch=master" alt="Build Status"/></a>
 </div>
-
-
 
 
 ## Overview
@@ -40,26 +38,31 @@ This boilerplate includes an **initial Vue.js + Webpack setup** to help you get 
   - JavaScript minified with [UglifyJS](https://github.com/mishoo/UglifyJS2).
   - HTML minified with [html-minifier](https://github.com/kangax/html-minifier).
   - CSS across all components extracted into a single file and minified with [cssnano](https://github.com/ben-eb/cssnano).
+  - SEO friendly pre-rendering
 
 _All static assets compiled with version hashes for efficient long-term caching, and a production `index.html` is auto-generated with proper URLs to these generated assets._
 
 
 ### Highlights
 
-- Vuex
-- vue-router
-- Webpack
-- jQuery
-- GSAP - TweenMax
-- Bulma
-- Animate CSS
-- Font Awesome
-- and the handy __npm__ for everybody!
+- [x] Vue2
+- [X] Webpack 2
+- [X] ESLint Standard
+- [X] Vue Router
+- [X] Vuex
+- [X] Firebase
+- [X] jQuery
+- [X] GSAP - TweenMax
+- [X] Bulma
+- [X] Animate CSS
+- [X] Font Awesome
+
+<p align="right">...and the handy <b>npm</b> for everyone!</p>
 
 
 ## Getting Started
 
-Make sure you have [Node](https://nodejs.org) ( >= 4.0) and [npm](https://www.npmjs.com/) ( >= 3.0) 
+Make sure you have [Node](https://nodejs.org) ( >= 4.0) and [npm](https://www.npmjs.com/) ( >= 3.0) installed on your development system. Now just sit and prepare for that magical feeling :crystal_ball:
 
 #### Install the dependencies :
 
@@ -74,9 +77,10 @@ npm i # or yarn
 ```bash
 npm start
 ```
-+ The server will be launched at `localhost:8080`
++ The development server will be launched at `localhost:8080`
 
-##### Build for production?
+
+##### What about build for production?
 ```bash
 npm run build
 ```
@@ -93,13 +97,16 @@ npm run build
 │   └── ...
 │
 ├── src/                        # app entry folder
-│   ├── index.js                # mount to DOM . run `app.js`
-│   ├── App.vue                 # main(root) app component
+│   │
+│   ├── app.js                  #       r o o t
+│   ├── App.vue                 #  ° ☾ ★ ¸. ¸. • ○ °
 │   │
 │   ├── assets/                 # module assets (processed by webpack)
 │   │   ├── ...               
 │   │   └─── sass/              # application stylesheets . `app.scss`
 │   │
+│   ├── app/                    # (dev_helpers)
+│   │   └── ...
 │   ├── router/                 # main router
 │   │   └── index.js
 │   ├── store/                  # (dev)
@@ -113,6 +120,8 @@ npm run build
 │       └── ...
 │
 ├── static/                     # pure static assets file
+│
+├── test/
 │
 ├── .babelrc                    # babel config
 ├── .editorconfig               # editor config
@@ -137,12 +146,13 @@ npm run build
 
 ## Contributing
 
-1. Fork the repository!
-2. Create a new feature branch : `git checkout -b your-feature`
-3. Commit changes : `git commit -am 'my new feature!'`
-4. Push : `git push origin your-feature`
+I know this is pretty much a self-development repository, but remember you can **Fork It And Make Your Own!** :fire:
 
-**PR's are very welcome!** :fire: :fire: :fire:
+Just in case:
+
+- Create a new feature branch : `git checkout -b new-feature`
+- Commit changes : `git commit -am 'awesome new feature!'`
+- PushPushPush : `git push origin new-feature`
 
 
 ## License

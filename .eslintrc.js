@@ -18,6 +18,7 @@ module.exports = {
   ],
   // http://eslint.org/docs/user-guide/configuring#specifying-globals
   globals: {
+    __DEV__: true,
     '$': true,
     'jQuery': true
   },

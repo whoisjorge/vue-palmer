@@ -1,9 +1,9 @@
 <template>
   <div id="app">
+    <nprogress-container />
+    <Viewport />
 
-    <Viewport></Viewport>
-
-    <app-Footer></app-Footer>
+    <footer-bar></footer-bar>
     
     <div id="bg_effect"></div>
   </div>
@@ -11,21 +11,22 @@
 
 
 <script>
+import NprogressContainer from 'vue-nprogress/src/NprogressContainer'
 import Viewport from '@/components/AppViewport'
-import AppHeader from '@/components/Header'
-import AppFooter from '@/components/Footer'
+import HeaderBar from '@/components/Header'
+import FooterBar from '@/components/Footer'
 
 export default {
-  name: 'APP_NAME',
+  name: 'APP',
 
   components: {
-    Viewport, AppHeader, AppFooter
+    NprogressContainer, Viewport, HeaderBar, FooterBar
   },
 
   created () {
     // Development purposes
     jQuery(document).ready(function ($) {
-      console.info('jQuery ready!')
+      console.log('jQuery ready!')
       // useless stuff
       $('img').click(function () {
         $(this).hide()
@@ -38,15 +39,16 @@ export default {
 </script>
 
 
+
 <style lang="sass">
 // App Styles
 @import './assets/sass/app'
-
-
-// Project Specific
 #app 
     padding-top: 2rem
 
+
+// Cool effect, uh? 
+// ( ͡° ͜ʖ ͡°)
 #bg_effect
     position: fixed
     width: 100vw
@@ -55,4 +57,25 @@ export default {
     left: 0px
     pointer-events: none
     background: radial-gradient(at center center, rgba(0, 0, 0, 0) 51%, rgba(0, 0, 0, 0.15) 100%)
+
+
+// NProgress
+.nprogress-container
+    position: fixed !important
+    width: 100%
+    height: 50px
+    z-index: 2048
+    pointer-events: none
+    margin-top: -2rem
+    #nprogress
+        $color: #48e79a
+        .bar
+            background: $primary
+    
+        .peg
+            box-shadow: 0 0 10px $primary, 0 0 5px $primary
+    
+        .spinner-icon
+            border-top-color: $primary
+            border-left-color: $primary
 </style>

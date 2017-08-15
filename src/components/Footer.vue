@@ -4,7 +4,7 @@
       
       <!-- Left -->
       <div class="column has-text-left">
-        <a href="#">vue-palmer</a>
+        <a href="/">vue-palmer</a>
       </div>
 
       <!-- Right -->
@@ -21,6 +21,7 @@
 
 <script>
 export default {
+  name: 'FOOTER'
 }
 </script>
 
@@ -46,8 +47,8 @@ footer
         
         // Responsive
         +mobile
-            padding-right: 1.625rem
-            padding-left: 1.625rem
+            padding-right: 1.125rem
+            padding-left: 1.125rem
 
     a
         font-family: 'BrandonGrotesque', sans-serif
