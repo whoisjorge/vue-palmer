@@ -6,7 +6,7 @@
 import { mapState } from 'vuex'
 import firebase from 'firebase'
 import firebaseui from 'firebaseui'
-import { ui } from '../api/firebase'
+import { ui } from '../app/firebase'
 
 // Configuration
 const uiConfig = {

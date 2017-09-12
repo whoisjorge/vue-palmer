@@ -1,10 +1,11 @@
 <template>
   <div id="app">
     <nprogress-container />
+
     <Viewport />
 
     <footer-bar></footer-bar>
-    
+
     <div id="bg_effect"></div>
   </div>
 </template>
@@ -43,11 +44,11 @@ export default {
 <style lang="sass">
 // App Styles
 @import './assets/sass/app'
-#app 
+#app
     padding-top: 2rem
 
 
-// Cool effect, uh? 
+// Cool effect, uh?
 // ( ͡° ͜ʖ ͡°)
 #bg_effect
     position: fixed
@@ -71,10 +72,10 @@ export default {
         $color: #48e79a
         .bar
             background: $primary
-    
+
         .peg
             box-shadow: 0 0 10px $primary, 0 0 5px $primary
-    
+
         .spinner-icon
             border-top-color: $primary
             border-left-color: $primary

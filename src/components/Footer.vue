@@ -1,27 +1,33 @@
 <template>
-  <footer>
-    <div class="columns is-mobile">
-      
-      <!-- Left -->
-      <div class="column has-text-left">
+  <footer :class="[fadeIn]">
+    <section class="columns is-mobile">
+
+      <div class="column">
         <a href="/">vue-palmer</a>
       </div>
 
-      <!-- Right -->
-      <div class="column has-text-right">
-        <a href="https://github.com/whoisjorge/vue-palmer/" target="_blank">
+      <div class="column">
+        <a :href="[url.repository]" target="_blank">
           <span class="icon"><i class="fa fa-github"></i></span>
         </a>
       </div>
 
-    </div>
+    </section>
   </footer>
 </template>
 
 
 <script>
 export default {
-  name: 'FOOTER'
+  name: 'FOOTER',
+
+  data: () => ({
+    fadeIn: 'animated fadeIn',
+    url: {
+      repository: 'https://github.com/whoisjorge/vue-palmer/'
+    }
+  })
+
 }
 </script>
 
@@ -30,21 +36,25 @@ export default {
 @import '~bulma/sass/utilities/_all'
 
 footer
-    position: absolute
+    position: fixed
     right: 0px
     bottom: 0px
     left: 0px
-    padding-top: 1rem
     text-align: center
     z-index: 1
+    animation-delay: .666s
 
     .columns
         margin: 0
 
-    .column 
+    .column
         padding-right: 3.625rem
         padding-left: 3.625rem
-        
+        &:nth-child(1)
+            text-align: left
+        &:nth-child(2)
+            text-align: right
+
         // Responsive
         +mobile
             padding-right: 1.125rem
@@ -66,7 +76,7 @@ footer
             font-size: 3rem
         +mobile
             font-size: 1.75rem
-      
+
         .icon i
             font-size: 66%
             cursor: pointer
@@ -79,17 +89,17 @@ footer
 
 
 /* *
-   *   
+   *
    *    LINKS
-   * 
-   * */ 
-a 
+   *
+   * */
+a
     color: rgba(0,0,0,.05)
     text-shadow: none
     transition: text-shadow 0.666s ease-in-out, color 1.666s
-  
+
     &:hover
         color: rgba(0,0,0,0)
         text-shadow: 1px 0px 4px rgba(16,215,174,0.7)
-  
+
 </style>

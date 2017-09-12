@@ -1,16 +1,16 @@
 <template>
   <main class="viewport">
     <transition
-        :mode="modeAnim"
-        :enter-active-class="enterAnim"
-        :leave-active-class="leaveAnim"
+        mode="out-in"
+        :enter-active-class="transitionName"
+        :leave-active-class="transitionName"
         appear>
 
       <router-view class="router-view animated"></router-view>
-      
+
     </transition>
 
-    <!-- <pre>{{ $data }}</pre> -->
+    <pre>{{ $data }}</pre>
   </main>
 </template>
 
@@ -20,9 +20,7 @@ export default {
   name: 'VIEWPORT',
   data () {
     return {
-      modeAnim: 'out-in',
-      enterAnim: 'fadeInUp',
-      leaveAnim: 'fadeOutUp'
+      transitionName: ''
     }
   }
 }
@@ -30,4 +28,6 @@ export default {
 
 
 <style lang="scss">
+.viewport {
+}
 </style>

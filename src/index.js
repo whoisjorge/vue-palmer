@@ -1,9 +1,8 @@
-// polyfills
-import 'es6-promise/auto'
-import 'weakmap' // for vuexfire, using (imports-loader)
+import 'es6-promise/auto' // polyfills
+import 'weakmap' // for vuexfire  (using imports-loader)
+import { app } from './app'
 
 /**
  * Mount to DOM
  */
-import { app } from './app'
 app.$mount('#app')

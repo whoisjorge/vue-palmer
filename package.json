@@ -10,12 +10,12 @@
     "funky"
   ],
   "author": "Jorge Moliner <email@whoisjorge.me>",
+  "license": "MIT",
   "homepage": "https://github.com/whoisjorge/vue-palmer#readme",
   "repository": "git@github.com:whoisjorge/vue-palmer.git",
   "bugs": {
     "url": "https://github.com/whoisjorge/vue-palmer/issues"
   },
-  "private": true,
   "scripts": {
     "start": "node build/dev-server.js",
     "dev": "node build/dev-server.js",
@@ -35,6 +35,7 @@
     "gsap": "^1.20.2",
     "jquery": "^3.2.1",
     "vue": "^2.3.3",
+    "vue-meta": "^1.1.0",
     "vue-nprogress": "^0.1.5",
     "vue-router": "^2.6.0",
     "vuex": "^2.3.1",
@@ -123,5 +124,6 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ]
+  ],
+  "private": true
 }

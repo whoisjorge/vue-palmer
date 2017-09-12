@@ -30,6 +30,8 @@ This boilerplate includes an **initial Vue.js + Webpack setup** to help you get 
 ## Features
 
 - Webpack + `vue-loader` with state preserving hot-reload
+- Centralized state management with Vuex
+- Route management with Vue-router
 - State preserving compilation error overlay
 - ESLint support with Lint-on-save
 - HTML/CSS/JS pre-processors support with [vue-loader](https://vue-loader.vuejs.org)
@@ -62,7 +64,7 @@ _All static assets compiled with version hashes for efficient long-term caching,
 
 ## Getting Started
 
-Make sure you have [Node](https://nodejs.org) ( >= 4.0) and [npm](https://www.npmjs.com/) ( >= 3.0) installed on your development system. Now just sit and prepare for that magical feeling :crystal_ball:
+Make sure you have [Node](https://nodejs.org) and [npm](https://www.npmjs.com/) installed on your system. Check out [Yarn](https://yarnpkg.com/) too. Now it's time to prepare for that magical feeling :crystal_ball:
 
 #### Install the dependencies :
 
@@ -109,7 +111,7 @@ npm run build
 │   │   └── ...
 │   ├── router/                 # main router
 │   │   └── index.js
-│   ├── store/                  # (dev)
+│   ├── store/                  # Vuex centralized state management(dev)
 │   │   └── ...
 │   ├── filters/                # (dev)
 │   │   └── ...
@@ -149,10 +151,11 @@ npm run build
 I know this is pretty much a self-development repository, but remember you can **Fork It And Make Your Own!** :fire:
 
 Just in case:
-
 - Create a new feature branch : `git checkout -b new-feature`
-- Commit changes : `git commit -am 'awesome new feature!'`
-- PushPushPush : `git push origin new-feature`
+- _Write your code... and comment it!_
+- Commit changes : `git commit -am 'Awesome new feature!'`
+- Push to the branch : `git push origin new-feature`
+- Submit a pull request
 
 
 ## License
@@ -163,4 +166,3 @@ This project is licensed under the open source MIT License - see the [LICENSE] f
 
 
 [LICENSE]: ./LICENSE
-[CONTRIBUTORS]: /contributors

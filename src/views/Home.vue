@@ -17,8 +17,15 @@
 <script>
 export default {
   name: 'HOME_VIEW',
+
+  data () {
+    return {
+      transitionName: 'fadeInUp'
+    }
+  },
+
   mounted () {
-    // enterAnim = 'Hola'
+    // enterAnim = 'fadeInDown'
   }
 }
 </script>
@@ -36,5 +43,5 @@ ul
 li
     display: inline-block
     margin: 0 10px
-    
+
 </style>
